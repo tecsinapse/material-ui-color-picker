@@ -1,7 +1,7 @@
 {
-  "name": "material-ui-color-picker",
-  "version": "3.2.0",
-  "description": "<ColorInput> component for material-ui",
+  "name": "@tecsinapse/material-ui-color-picker",
+  "version": "4.2.0",
+  "description": "<ColorInput> component for material-ui - based on loicmahieu",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint",
