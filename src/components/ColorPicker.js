@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import compose from 'recompose/compose'
 import withState from 'recompose/withState'
@@ -33,7 +33,7 @@ const ColorPicker = ({
   setValue
 
 }) => (
-  <Fragment>
+  <>
     <TextFieldComponent
       name={name}
       id={id}
@@ -43,7 +43,7 @@ const ColorPicker = ({
       onClick={() => setShowPicker(true)}
       onChange={e => {
         setValue(e.target.value)
-        if(onChange) {
+        if (onChange) {
           onChange(e.target.value)
         }
       }}
@@ -54,21 +54,21 @@ const ColorPicker = ({
       <PickerDialog
         value={value === undefined ? internalValue : value}
         onClick={() => {
-          setShowPicker(false);
-          if(onChange) {
-            onChange(value);
+          setShowPicker(false)
+          if (onChange) {
+            onChange(value)
           }
         }}
         onChange={c => {
-          const newValue = converters[convert](c);
-          setValue(newValue);
-          if(onChange) {
-            onChange(newValue);
+          const newValue = converters[convert](c)
+          setValue(newValue)
+          if (onChange) {
+            onChange(newValue)
           }
         }}
       />
     )}
-  </Fragment>
+  </>
 )
 
 ColorPicker.propTypes = {
@@ -88,12 +88,12 @@ ColorPicker.propTypes = {
   setShowPicker: PropTypes.func,
   internalValue: PropTypes.string,
   setValue: PropTypes.func,
-  disabled: PropTypes.bool,
+  disabled: PropTypes.bool
 }
 
 ColorPicker.defaultProps = {
   convert: DEFAULT_CONVERTER,
-  disabled: false,
+  disabled: false
 }
 
 const makeColorPicker = compose(
