@@ -1,6 +1,6 @@
 {
   "name": "@tecsinapse/material-ui-color-picker",
-  "version": "4.2.0",
+  "version": "4.4.0",
   "description": "<ColorInput> component for material-ui - based on loicmahieu",
   "main": "lib/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loicmahieu/material-ui-color-picker.git"
+    "url": "git+https://github.com/tecsinapse/material-ui-color-picker.git"
   },
   "keywords": [
     "reactjs",
@@ -30,9 +30,9 @@
   "author": "Loic Mahieu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loicmahieu/material-ui-color-picker/issues"
+    "url": "https://github.com/tecsinapse/material-ui-color-picker/issues"
   },
-  "homepage": "https://github.com/loicmahieu/material-ui-color-picker#readme",
+  "homepage": "https://github.com/tecsinapse/material-ui-color-picker#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
